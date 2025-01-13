@@ -76,6 +76,7 @@ const CleaningSection = () => {
   Trusted Professionals</h5>
                 <p className="text-muted m-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  please gate it hope you well be happy 
                 </p>
               </div>
             </div>
