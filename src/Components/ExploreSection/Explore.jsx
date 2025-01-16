@@ -1,103 +1,102 @@
-import React from "react";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'tailwindcss/tailwind.css';
+import Service from "../../assets/cleaner.jpg"
+import deep from "../../assets/deep.png"
+import deep2 from "../../assets/deep2.png"
+import deep3 from "../../assets/deep3.png"
+import deep4 from "../../assets/deep4.png"
+import deep5 from "../../assets/deep5.png"
+import deep6 from "../../assets/deep6.png"
+import icon from "../../assets/icon.png";
 
-const CleaningServices = () => {
+const ServicesSection = () => {
   return (
-    <div className="container mx-auto py-10">
-      {/* Cleaning Services Section */}
-      <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold mb-6">Cleaning Services</h2>
-        <p className="text-gray-600 mb-8">
-          Professional cleaning services to suit your needs.
-        </p>
-        <div className="row">
-          {[
-            "Deep Cleaning",
-            "Kitchen Cleaning",
-            "Office Cleaning",
-            "Restaurant Cleaning",
-            "Carpet & Upholstery Cleaning",
-            "Shop Cleaning",
-          ].map((service, index) => (
-            <div className="col-lg-2 col-md-4 col-sm-6 mb-4" key={index}>
-              <div className="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-lg">
-                <div className="text-green-500 text-4xl mb-3">
-                  <i className="fas fa-broom"></i>
-                </div>
-                <p className="text-gray-800 font-medium text-center">{service}</p>
-              </div>
+    <section className="container py-5">
+      <div className="row align-items-center">
+        <div className="col-md-6">
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <img
+              src={Service}
+              alt="Cleaning Services"
+              className="w-full h-auto"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+              <h2 className="text-white text-2xl font-bold mt-5">Cleaning Services</h2>
             </div>
-          ))}
+          </div>
         </div>
-        <button className="mt-8 px-6 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600">
-          See All Services
-        </button>
-      </div>
+        <div className="col-md-6 mt-4 mt-md-0">
+          <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="flex flex-col items-center">
+              <div className=" p-3 rounded-full">
+                {/* <i className="fas fa-broom text-green-600 text-2xl"></i> */}
+                <img src={deep} alt="img" />
 
-      {/* Pricing Table Section */}
-      <div className="text-center">
-        <h2 className="text-4xl font-bold mb-6">Explore the Best Plans for Services</h2>
-        <p className="text-gray-500 mb-10">
-          Choose a plan that fits your needs and budget.
-        </p>
-
-        <div className="row">
-          {[
-            {
-              title: "Basic Package",
-              price: "$100",
-              features: [
-                "Routine cleaning",
-                "Basic unpacking and organization",
-                "Mirror and window cleaning",
-              ],
-            },
-            {
-              title: "Premium Package",
-              price: "$200",
-              features: [
-                "Comprehensive deep cleaning",
-                "Specialized transport",
-                "High-value item organization",
-              ],
-            },
-            {
-              title: "Premium Transport",
-              price: "$100",
-              features: [
-                "Efficient transport",
-                "Packing and unpacking services",
-                "Smooth transition",
-              ],
-            },
-          ].map((plan, index) => (
-            <div className="col-lg-4 col-md-6 mb-4" key={index}>
-              <div className="p-6 bg-gray-50 shadow-lg rounded-lg border hover:shadow-xl">
-                <h3 className="text-xl font-semibold text-gray-700 mb-4">
-                  {plan.title}
-                </h3>
-                <p className="text-2xl font-bold text-green-500 mb-6">
-                  {plan.price} <span className="text-sm text-gray-500">/ hour</span>
-                </p>
-                <ul className="text-left text-gray-600 mb-6 space-y-2">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center">
-                      <span className="text-green-500 mr-2">
-                        <i className="fas fa-check"></i>
-                      </span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <button className="w-full px-4 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600">
-                  Get Started
-                </button>
               </div>
+              <p className="mt-2 font-semibold">Deep Cleaning</p>
             </div>
-          ))}
+            <div className="flex flex-col items-center">
+              <div className=" p-3 rounded-full">
+               
+                <img src={deep2} alt="img" />
+              </div>
+              <p className="mt-2 font-semibold">Kitchen Cleaning</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className=" p-3 rounded-full">
+               
+                <img src={deep3} alt="img" />
+              </div>
+              <p className="mt-2 font-semibold">Office Cleaning</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className=" p-3 rounded-full">
+              
+                <img src={deep4} alt="img" />
+              </div>
+              <p className="mt-2 font-semibold">Shop Cleaning</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className=" p-3 rounded-full">
+            
+                <img src={deep5} alt="img" />
+              </div>
+              <p className="mt-2 font-semibold">Carpet & Upholstery</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className=" p-3 rounded-full">
+             
+                <img src={deep6} alt="img" />
+              </div>
+              <p className="mt-2 font-semibold">Restaurant Cleaning</p>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <button className="bg-green-600 text-white py-2 mt-4 px-20 rounded-5 hover:bg-green-700 transition">See All</button>
+          </div>
         </div>
       </div>
-    </div>
+      <div className="row mt-5">
+  <div className="grid grid-cols-12 gap-4 mt-5 text-center">
+   <h3 className="col-span-12 sm:col-span-6 fw-bold text-4xl text-start ms-5 py-3">
+   Explore the Best <br /> Plans for Services
+   </h3>
+   <div className="col-span-12 sm:col-span-6 pt-4">
+    <div className="d-flex items-center"> <img src={icon} alt="" />  <h3 className="text-start ms-3 text-xl font-bold">  Pricing Table</h3></div>
+   <p className="text-start " >
+   Lorem ipsum dolor sit amet, consectetur dipiscing elit eius mod tempor incididunt ut labore 
+   </p>
+   </div>
+  
+ </div>
+ <div className="border border-success">
+ 
+ </div>
+</div>
+
+    </section>
   );
 };
 
-export default CleaningServices;
+export default ServicesSection;

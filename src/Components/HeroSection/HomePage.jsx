@@ -8,6 +8,8 @@ import Footer from '../Footer/Footer'
 import ExpertTeam from '../TeamExplore/TeamExplore'
 import HowItWorks from '../HowWework/Howwork'
 import Feedback from '../Feedback/Feedback'
+import PricingCards from '../CardsSection/CardSection'
+import VideooSection from '../VideoSection/VideoSection'
 
 
 
@@ -17,10 +19,15 @@ const HomePage = () => {
     <>
     <HeroSection/>
     <CleaningSection/>
-    <ExpertTeam/>
-    <HowItWorks/>
+   
+  
 <CleaningServices/>
-<Feedback/>
+<PricingCards/>
+
+<VideooSection/>
+<ExpertTeam/>
+<HowItWorks/>
+{/* <Feedback/> */}
 <ContactSection/>
 <Footer/>
    <Outlet/>
