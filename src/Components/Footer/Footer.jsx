@@ -7,6 +7,8 @@ import map from "../../assets/map.png"
 
 import { Icon } from "@iconify/react";
 
+
+
 const Footer = () => {
   return (
     <footer className="bg-green-500 text-white py-10">
@@ -96,20 +98,23 @@ const Footer = () => {
               queries:
             </p>
             <ul className="mt-4 space-y-2">
-            <li className="flex items-start   gap-2 text-gray-200 text-sm">
+            <li className="flex items-start    gap-2 text-gray-200 text-sm">
   {/* <Icon className="mt-1 text-xl" icon="weui:location-outlined" /> */}
-  <img src={map} alt="" />
+  <Icon className="text-3xl " icon="iconoir:map-pin" />
+  {/* <img src={map} alt="" /> */}
   123 Main St, Suite 500, New York, NY 10001
 </li>
 
-              <li className="flex items-center gap-2 text-gray-200 text-sm">
+              <li className="flex items-center  gap-2 text-gray-200 text-sm">
   {/* <Icon icon="solar:phone-line-duotone" /> */}
-  <img src={phone} alt="" />
+  <Icon className="text-2xl ps-1" icon="bi:telephone" />
+  {/* <img src={phone} alt="" /> */}
   +1 (333) 000-0000
 </li>
 <li className="flex items-center gap-2 text-gray-200 text-sm">
   {/* <Icon icon="solar:phone-line-duotone" /> */}
-  <img src={phone} alt="" />
+  <Icon className="text-2xl ps-1" icon="bi:telephone" />
+  {/* <img src={phone} alt="" /> */}
   +1 (333) 000-0000
 </li>
 

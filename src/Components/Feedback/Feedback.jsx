@@ -8,12 +8,10 @@ const testimonials = [
     Name: "Ayaz Ali",
     image: man,
     role: "Teacher",
-    feedback:
-      (
-        <>
-        "Read testimonials from our satisfied clients. See how <br/> our cleaning services have made a difference in <br/> their lives and homes",
-        </>
-      )
+   
+      feedback:
+      "Amazing team! They exceeded my expectations with their attention to detail and professionalism. Truly exceptional service.",
+      
   },
   {
     Name: "Jane Cooper",
@@ -85,8 +83,8 @@ const FeedbackSection = () => {
         <div className="col-md-10">
           <div className="row">
             {/* Left Card (Fixed) */}
-            <div className="col-md-6 col-12 mb-4">
-              <div className="bg-white shadow-lg rounded-lg p-6 flex items-center relative">
+            <div className="col-md-6 col-12 mb-">
+              <div className="bg-white shadow-lg rounded-lg p-6 flex items-center relative ">
                 {/* Image */}
                 {/* <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-4 border-white shadow-md">
                   <img
@@ -98,7 +96,7 @@ const FeedbackSection = () => {
 
                 {/* Content */}
                 <div className="ml-6 py-4 ">
-                  <h3 className="text-4xl font-bold text-black py-2 leading-tight">{testimonials[0].name}</h3>
+                  <h3 className="text-4xl font-bold text-black py-3 leading-tight">{testimonials[0].name}</h3>
                   {/* <p className="text-gray-500 text-sm">{testimonials[0].role}</p> */}
                   {/* Star Ratings */}
                   {/* <div className="text-yellow-500 flex mt-2">
@@ -109,7 +107,7 @@ const FeedbackSection = () => {
                       ))}
                   </div> */}
                   {/* Feedback Text */}
-                  <p className="text-gray-600 mt-2 pb-2">{testimonials[0].feedback}</p>
+                  <p className="text-gray-600 mt- ">{testimonials[0].feedback}</p>
                 </div>
 
                 {/* Quote Icon */}
@@ -120,21 +118,21 @@ const FeedbackSection = () => {
             </div>
 
             {/* Right Card (Changes) */}
-            <div className="col-md-6 col-12 mb-4">
-              <div className="bg-white shadow-lg rounded-lg p-6 flex items-center relative py-5">
+            <div className="col-md-6 col-12 py">
+              <div className="bg-white shadow-lg rounded-lg p-6 flex items-center relative  ">
                 {/* Image */}
                 <div className="w-32 h-32  overflow-hidden flex-shrink-0 border-4 border-white ">
-                  <img
+                  <img 
                     src={testimonials[currentIndex].image}  // Right card changes
                     alt={testimonials[currentIndex].name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover "
                   />
                 </div>
 
                 {/* Content */}
-                <div className="ml-6 py-3">
+                <div className="ml-6 py-4">
                   <h3 className="text-lg font-bold text-black">{testimonials[currentIndex].Name}</h3>
-                  <p className="text-gray-500 text-sm">{testimonials[currentIndex].role}</p>
+                  <p className="text-gray-500 text-sm pb-2 leading-relaxed">{testimonials[currentIndex].role}</p>
                   {/* Star Ratings */}
                   <div className="text-yellow-500 flex mt-2">
                     {Array(5)

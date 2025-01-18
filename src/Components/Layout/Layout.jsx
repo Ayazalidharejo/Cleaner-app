@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
 const Navbar = () => {
@@ -28,7 +28,9 @@ const Navbar = () => {
               <a href="#">About Us</a>
             </li>
             <li className="hover:text-green-500">
-              <a href="#">Services</a>
+           
+            <Link to="/Servicehome">Services</Link>
+
             </li>
             <li className="hover:text-green-500">
               <a href="#">Pricing</a>

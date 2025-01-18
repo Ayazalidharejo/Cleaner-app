@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"; // Impor
 import { store } from "./assets/Store/Store"; // Import Redux store
 import Navbar from "./Components/Layout/Layout"; // Import Navbar component
 import HomePage from "./Components/HeroSection/HomePage"; // Import HomePage component
+import Servicehome from "./Components/ServiceSection/Service/Servicehome";
+
 
 function App() {
   // Create the router using createBrowserRouter
@@ -15,10 +17,10 @@ function App() {
           path: "", // This is the default route under the root path "/"
           element: <HomePage /> // HomePage will be rendered here
         },
-        // {
-        //   path: "HomePage", // This can be an additional route like "/HomePage"
-        //   element: <HomePage /> // HomePage will be rendered here as well
-        // },
+        {
+          path: "/Servicehome", 
+          element: <Servicehome /> 
+        },
       ],
     },
   ]);
