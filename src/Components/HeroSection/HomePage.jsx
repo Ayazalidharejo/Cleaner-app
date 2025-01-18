@@ -27,7 +27,7 @@ const HomePage = () => {
 <VideooSection/>
 <ExpertTeam/>
 <HowItWorks/>
-{/* <Feedback/> */}
+<Feedback/>
 <ContactSection/>
 <Footer/>
    <Outlet/>

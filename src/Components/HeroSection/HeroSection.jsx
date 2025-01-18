@@ -2,6 +2,7 @@ import React from "react";
 import heroImage from "../../assets/hero.png";
 import { Outlet } from "react-router-dom";
 
+
 const HeroSection = () => {
   return (
     <section
@@ -10,15 +11,15 @@ const HeroSection = () => {
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      height: "500px",  // Adjust height as needed
+      height: "650px",  // Adjust height as needed
     }}
   >
       <div className="container mx-auto flex flex-col lg:flex-row items-center py-24 px-6">
-        <div className="lg:w-1/2">
-        <span className="text-xl font-normal text-gray-800 ">
+        <div className="lg:w-1/2 flrx items-center mt-32 ">
+        <span className="text-xl font-normal text-gray-800 pt-32">
         Quality cleaning at a fair price.
           </span>
-          <h1 className="text-4xl font-bold text-gray-800">
+          <h1 className="text-4xl font-bold text-gray-800 ">
             Quick and Reliable Cleaning Solutions
           </h1>
           <p className="text-lg text-gray-600 mt-4">
