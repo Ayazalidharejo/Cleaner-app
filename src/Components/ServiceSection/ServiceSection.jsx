@@ -16,6 +16,7 @@ import twilive from "../../assets/twilive.png";
 import threen from "../../assets/threen.png";
 import fourt from "../../assets/fourt.png";
 import fiv from "../../assets/fiv.png";
+import BasicModal from "../Form/USeForm";
 
 const services = [
   {
@@ -47,6 +48,11 @@ const services = [
 ];
 
 const Service = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+
   return (
     <div className="container my-5">
       {services.map((section, index) => (
@@ -55,7 +61,7 @@ const Service = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {section.items.map((service, idx) => (
               <div key={idx} className="flex justify-center">
-                <div
+                <div  onClick={handleOpen}
                   className="p-4 border rounded-lg shadow-sm h-full transition-all duration-300 ease-in-out
                              hover:bg-green-700 hover:text-white text-green-700 flex flex-col items-center justify-between"
                 >
@@ -68,6 +74,7 @@ const Service = () => {
           </div>
         </div>
       ))}
+        <BasicModal open={open } handleOpen={handleOpen} handleClose={handleClose} />
     </div>
   );
 };

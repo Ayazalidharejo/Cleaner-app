@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
+
 const Navbar = () => {
   // State for controlling the mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -97,6 +98,7 @@ const Navbar = () => {
       </nav>
 
       {/* The Outlet will render child routes like HomePage */}
+    
       <Outlet />
     </>
   );

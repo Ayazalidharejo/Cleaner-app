@@ -6,6 +6,8 @@ import HomePage from "./Components/HeroSection/HomePage"; // Import HomePage com
 import Servicehome from "./Components/ServiceSection/Service/Servicehome";
 
 
+
+
 function App() {
   // Create the router using createBrowserRouter
   const router = createBrowserRouter([
@@ -21,6 +23,10 @@ function App() {
           path: "/Servicehome", 
           element: <Servicehome /> 
         },
+        // {
+        //   path: "/BasicModal", 
+        //   element: <BasicModal /> 
+        // },
       ],
     },
   ]);
