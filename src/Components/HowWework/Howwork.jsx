@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 import image from "../../assets/work.png";
 import image1 from "../../assets/work1.png";
 import image2 from "../../assets/work2.png";
@@ -29,7 +31,7 @@ const Howwork = () => {
         <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div className="relative  flex flex-column items-center">
             <img className="w-56" src={image2} alt="" />
-            <img className="w-64 absolute top-20 left-52" src={path2} alt="" />
+            <img className="w-64 absolute top-20 left-52 " src={path2} alt="" />
            <div className='pt-3'>
            <span className='font-bold text-green-600'>Clean</span>
            <p>A Professional cleaner comes over <br /> and cleans your place.</p>
